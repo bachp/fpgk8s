@@ -16,8 +16,8 @@ keywords = ["kubernetes", "k8s", "device", "plugin"]
 build = "build.rs"
 
 [dependencies]
-tonic = "0.4"
-prost = "0.7"
+tonic = "0.6"
+prost = "0.9"
 
 [build-dependencies]
-tonic-build = "0.4"
+tonic-build = "0.6"

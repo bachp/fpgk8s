@@ -5,8 +5,9 @@ authors = ["hasheddan <georgedanielmangum@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-k8s-deviceplugin = "0.1.0"
-tonic = "0.4"
-prost = "0.7"
+k8s-deviceplugin = { path = "../k8s-deviceplugin" }
+tonic = "0.6"
+prost = "0.9"
 tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+tokio-stream = "0.1"
 tower = { version = "0.4" }
