@@ -1,2 +1,13 @@
 [workspace]
 members = ["k8s-deviceplugin", "plugin"]
+
+[profile.release]
+strip = true  # Automatically strip symbols from the binary.
+opt-level = "z"  # Optimize for size.
+lto = true
+codegen-units = 1
+
+[patch.crates-io]
+tonic = { git = "https://github.com/hyperium/tonic" }
+tonic-build = { git = "https://github.com/hyperium/tonic" }
+h2 = { git = "https://github.com/bachp/h2.git", branch = "ignore-authority" }
