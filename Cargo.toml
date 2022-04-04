@@ -8,6 +8,4 @@ lto = true
 codegen-units = 1
 
 [patch.crates-io]
-tonic = { git = "https://github.com/hyperium/tonic" }
-tonic-build = { git = "https://github.com/hyperium/tonic" }
-h2 = { git = "https://github.com/bachp/h2.git", branch = "ignore-authority" }
+h2 = { git = "https://github.com/arthurlm/h2.git", rev = "986308cd2a3665453f74dbd50420260a5ce708f9" }
